@@ -1,0 +1,50 @@
+<mat-card class="container">
+    <mat-card-header>
+      <mat-card-title> Alterar IMC </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+  
+      <mat-form-field id="nomeA" class="input">
+        <mat-label for="nomeA">Nome:</mat-label>
+        <input matInput type="text" id="nomeA" [(ngModel)]="nomeA" />
+      </mat-form-field>
+  
+      <mat-form-field id="nascimentoAId" class="input">
+        <mat-label for="nascimentoAId">Nascimento:</mat-label>
+        <input matInput type="number" id="nascimentoAId" [(ngModel)]="nascimentoAId" />
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-form-field id="altura" class="input">
+        <mat-label for="altura">Altura:</mat-label>
+        <input matInput type="number" id="altura" [(ngModel)]="altura" />
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-form-field id="peso" class="input">
+        <mat-label for="peso">Peso:</mat-label>
+        <input matInput type="number" id="peso" [(ngModel)]="peso" />
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-form-field id="calculoImc" class="input">
+        <mat-label for="calculoImc">IMC:</mat-label>
+        <input matInput type="number" id="calculoImc" [(ngModel)]="calculoImc" />
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-form-field id="classificacao" class="input">
+        <mat-label for="classificacao">Classificação:</mat-label>
+        <input matInput type="text" id="classificacao" [(ngModel)]="classificacao" />
+      </mat-form-field>
+    </mat-card-content>
+
+    <button
+      mat-raised-button
+      color="warn"
+      id="btnCadastrar"
+      (click)="cadastrar()"
+    >
+      Alterar
+    </button>
+  </mat-card>

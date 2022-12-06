@@ -1,0 +1,7 @@
+C:\Users\Aluno\Desktop\Academia1\Back\obj\Debug\net5.0\Academia.csproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\Academia1\Back\obj\Debug\net5.0\Academia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Desktop\Academia1\Back\obj\Debug\net5.0\Academia.AssemblyInfoInputs.cache
+C:\Users\Aluno\Desktop\Academia1\Back\obj\Debug\net5.0\Academia.AssemblyInfo.cs
+C:\Users\Aluno\Desktop\Academia1\Back\obj\Debug\net5.0\Academia.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\Academia1\Back\obj\Debug\net5.0\Academia.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Aluno\Desktop\Academia1\Back\obj\Debug\net5.0\Academia.MvcApplicationPartsAssemblyInfo.cache

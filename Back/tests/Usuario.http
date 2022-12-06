@@ -1,0 +1,8 @@
+### Cadastrar um usuario
+POST https://localhost:5001/api/usuario/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Paula",
+    "nascimento" : "1900-09-20"
+}

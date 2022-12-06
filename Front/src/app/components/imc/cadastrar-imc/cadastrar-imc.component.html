@@ -1,0 +1,52 @@
+<mat-card class="container">
+    <mat-card-header>
+      <mat-card-title> Cadastrar IMC </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field id="nomeA" class="input">
+        <mat-label for="nomeA">Nome</mat-label>
+        <mat-select [(ngModel)]="nomeAId">
+          <mat-option *ngFor="let nome of nomes" value="{{ nome.id }}">
+            {{ nome.id }} - {{ usuario.nome }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field id="nascimentoAId" class="input">
+        <mat-label for="nascimentoAId">Nascimento</mat-label>
+        <mat-select [(ngModel)]="nascimentoAId">
+          <mat-option *ngFor="let nome of nomes" value="{{ nascimento.id }}">
+            {{ nascimento.id }} - {{ usuario.nascimento }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field *ngIf="id" id="altura" class="input">
+        <mat-label for="altura">Altura:</mat-label>
+        <input matInput type="number" id="altura" [(ngModel)]="altura" />
+      </mat-form-field>
+  
+      <mat-form-field *ngIf="id" id="peso" class="input">
+        <mat-label for="peso">Peso:</mat-label>
+        <input matInput type="number" id="peso" [(ngModel)]="peso" />
+      </mat-form-field>
+
+      <mat-form-field *ngIf="id" id="calculoImc" class="input">
+        <mat-label for="calculoImc">Calculo Imc:</mat-label>
+        <input matInput type="number" id="calculoImc" [(ngModel)]="calculoImc" />
+      </mat-form-field>
+
+      <mat-form-field *ngIf="id" id="classificacao" class="input">
+        <mat-label for="classificacao">Classificação:</mat-label>
+        <input matInput type="text" id="classificacao" [(ngModel)]="classificacao" />
+      </mat-form-field>
+</mat-card-content>
+
+    <button
+    mat-raised-button
+    color="warn"
+    id="btnCadastrar"
+    (click)="cadastrar()"
+  >
+    Cadastrar
+  </button>

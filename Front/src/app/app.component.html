@@ -1,0 +1,31 @@
+<mat-toolbar color="warn">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Academia</span>
+  </mat-toolbar>
+  <mat-sidenav-container class="container">
+    <mat-sidenav #sidenav mode="side">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/pages/usuario/cadastrar">
+          <mat-icon class="icon">person_add</mat-icon>
+          Cadastrar Usuário
+        </a>
+        <a mat-list-item routerLink="/pages/funcionario/listar">
+          <mat-icon class="icon">list</mat-icon>
+          Cadastrar IMC
+        </a>
+        <a mat-list-item routerLink="/pages/folha/cadastrar">
+          <mat-icon class="icon">add</mat-icon>
+          Listar IMCs
+        </a>
+        <a mat-list-item routerLink="/pages/folha/listar">
+          <mat-icon class="icon">list</mat-icon>
+          Alterar IMCs
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+      <router-outlet> </router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

@@ -1,0 +1,22 @@
+<table>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Nascimento</th>
+      <th>Altura</th>
+      <th>Peso</th>
+      <th>IMC</th>
+      <th>Classificação</th>
+      <th>Criado em</th>
+    </tr>
+    <tr *ngFor="let imc of imcs">
+      <td>{{ imc.id }}</td>
+      <td>{{ imc.nomeA?.nome }}</td>
+      <td>{{ imc.nascimentoAId }}</td>
+      <td>{{ imc.altura }}</td>
+      <td>{{ imc.peso }}</td>
+      <td>{{ imc.calculoImc }}</td>
+      <td>{{ imc.classificacao }}</td>
+      <td>{{ imc.criadoEm }}</td>
+    </tr>
+  </table>
